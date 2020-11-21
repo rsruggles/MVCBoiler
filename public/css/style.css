@@ -9,13 +9,20 @@
 
 html, 
 body, 
-.wrapper, 
 .wrapper > .row, 
 .sidebar {
-	height: calc(100% - 55.97px);
+	height: 100%;
+}
+.wrapper {
+	height: calc(100vh - 55.97px);
+label {
+    font-weight: bold;
+    color: var(--secondary);
+    font-size: 0.8rem;
+    letter-spacing: 0.25px;
 }
 .nav-pills .nav-link {
-	transition: 0.3s all,
+	transition: 0.3s all;
     text-shadow: 1px 1px 1px #2a343e;
     font-weight: 500;
     font-size: 0.9rem;
@@ -24,4 +31,8 @@ body,
 .nav-link:focus, .nav-link:hover {
     text-decoration: none;
     background: #5a7086;
+	color: var(--white)!important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1.5rem;
 }
