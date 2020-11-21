@@ -23,7 +23,7 @@ label {
     letter-spacing: 0.25px;
 }
 .nav-pills .nav-link {
-	transition: 0.3s all;
+	transition: 0.3s color, 0.3s background;
     text-shadow: 1px 1px 1px #2a343e;
     font-weight: 500;
     font-size: 0.9rem;
