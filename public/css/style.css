@@ -12,5 +12,16 @@ body,
 .wrapper, 
 .wrapper > .row, 
 .sidebar {
-	height: 100%;
+	height: calc(100% - 55.97px);
+}
+.nav-pills .nav-link {
+	transition: 0.3s all,
+    text-shadow: 1px 1px 1px #2a343e;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: .66rem 1rem;
+}
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+    background: #5a7086;
 }
