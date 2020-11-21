@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+	.sidebar {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		bottom: 0;
+	}
+}
+
+html, 
+body, 
+.wrapper, 
+.wrapper > .row, 
+.sidebar {
+	height: 100%;
+}
