@@ -1,23 +1,33 @@
-<h2>Search Books</h2>
-<form action="/books" method="GET">
-  
-  <div>
-    <label>Title</label>
-    <input type="text" name="title" value="<%= searchOptions.title %>">
-  </div>
-  
-  <div>
-    <label>Published After</label>
-    <input type="date" name="publishedAfter" value="<%= searchOptions.publishedAfter %>">
-  </div>
-  
-  <div>
-    <label>Published Before</label>
-    <input type="date" name="publishedBefore" value="<%= searchOptions.publishedBefore %>">
-  </div>
-  
-  <button type="submit">Search</button>
-</form>
+<div class="container">
+	<div class="border rounded p-4 shadow">
+	<h4>Search Books</h4>
+		<form action="/books" method="GET">
+			<div class="row align-items-center">
+			  <div class="col-12 col-md-6 col-lg-3">
+				  <div class="form-group">
+					<label>Title:</label>
+					<input type="text" class="form-control" name="title" value="<%= searchOptions.title %>">
+				  </div>
+			  </div>
+			  <div class="col-12 col-md-6 col-lg-3">
+				  <div class="form-group">
+					 <label>Published After</label>
+				<input type="date" class="form-control" name="publishedAfter" value="<%= searchOptions.publishedAfter %>">
+				  </div>
+			  </div>
+			  <div class="col-12 col-md-6 col-lg-3">
+				  <div class="form-group">
+					  <label>Published Before</label>
+				<input type="date" class="form-control" name="publishedBefore" value="<%= searchOptions.publishedBefore %>">
+				  </div>
+			  </div>
+			  <div class="col-12 col-md-6 col-lg-3">
+				<button class="btn btn-primary btn-block" type="submit">Search</button>
+			  </div>
+		  </div>
+		</form>
+	</div>
+</div>
 <br>
 
 <div>
