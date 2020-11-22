@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     const authors = await Author.find(searchOptions)
     res.render('authors/index', {
       authors: authors,
-      searchOptions: req.query 
+      searchOptions: req.query
     })
   } catch {
     res.redirect('/')
@@ -41,10 +41,10 @@ router.post('/', async (req, res) => {
   }
 })
 
-router.get('/:id',  async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const author = await Author.findById(req.params.id)
-    const books = await Book.find({ author: author.id }).limit(6)
+    const books = await Book.find({ author: author.id }).limit(6).exec()
     res.render('authors/show', {
       author: author,
       booksByAuthor: books
