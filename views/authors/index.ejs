@@ -15,5 +15,10 @@
 	</form>
 </div>
 <% authors.forEach(author => { %>
-<div class="border rounded bg-white font--bold p-3 mb-2"><%= author.name %></div>
+  <div class="border rounded bg-white font--bold p-3 mb-2">
+    <%= author.name %>
+    <a href="/authors/<%= author.id %>">View</a>
+    <a href="/authors/<%= author.id %>/edit">Edit</a>
+    <%- include('../partials/deleteForm', { url: `/authors/${author.id}` }) %>
+  </div>
 <% }) %>
