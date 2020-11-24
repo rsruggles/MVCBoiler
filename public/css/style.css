@@ -7,9 +7,9 @@
 	}
 }
 
-html, 
-body, 
-.wrapper > .row, 
+html,
+body,
+.wrapper > .row,
 .sidebar {
 	height: 100%;
 }
@@ -36,4 +36,10 @@ label {
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 1.5rem;
+}
+.hover-shadow {
+	transition: box-shadow 0.2s;
+}
+.hover-shadow:hover {
+	     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
