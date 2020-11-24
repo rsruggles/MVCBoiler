@@ -1,6 +1,15 @@
-<h2>New Author</h2>
-<form action="/authors" method="POST">
-  <%- include('_form_fields') %>
-  <a href="/authors">Cancel</a>
-  <button type="submit">Create</button>
-</form>
+<h5>New Author</h5>
+<div class="border rounded p-4 mb-5 shadow">
+  <form action="/authors" method="POST">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-lg-9">
+        <div class="form-group">
+          <%- include('_form_fields') %>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <button class="btn btn-primary btn-block" type="submit">Add Author</button>
+      </div>
+    </div>
+  </form>
+</div>
